@@ -85,8 +85,8 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector('input[type=text]');
-    var label=listItem.querySelector("label");
+    var editInput=listItem.querySelector('.field-input');
+    var label=listItem.querySelector(".field-label");
     var editBtn=listItem.querySelector(".js-btn-edit");
     var containsClass=listItem.classList.contains("open-for-edit");
     //If class of the parent is .open-for-edit
@@ -158,7 +158,7 @@ addButton.addEventListener("click",ajaxRequest);
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
-    var checkBox=taskListItem.querySelector("input[type=checkbox]");
+    var checkBox=taskListItem.querySelector(".field-checkbox");
     var editButton=taskListItem.querySelector(".js-btn-edit");
     var deleteButton=taskListItem.querySelector(".js-btn-delete");
 
