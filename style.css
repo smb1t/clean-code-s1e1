@@ -28,6 +28,15 @@
   
 }
 
+.text-hide {
+  font: 0/0 a;
+  position: absolute;
+  color: transparent;
+  border: 0;
+  text-shadow: none;
+	background-color: transparent;
+}
+
 /* Heading */
 .title {
   color: #333;

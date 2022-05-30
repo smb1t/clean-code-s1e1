@@ -1,42 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="screen">
   </head>
   <body class="page">
-    <div class="header">
+    <header class="header">
+      <h1 class="text-hide">Todo App</h1>
       <img src="./eisenhower-matrix.jpg"  class="header-image" alt="">
       <a class="header-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="main-section">
-      <div>
-        <label for="new-task" class="title">Add Item</label>
+    </header>
+    <main class="main-section">
+      <section>
+        <h3 class="title"><label for="new-task">Add Item</label></h3>
         <div class="field">
           <input id="new-task" class="field-input" type="text"><button id="add-btn" class="btn btn-text">Add</button>
         </div>
-      </div>
-      <h3 class="title">Todo</h3>
-      <ul id="incomplete-tasks" class="list">
-        <li class="list-item field">
-          <input type="checkbox" class="field-checkbox"><label class="field-label">Pay Bills</label><input type="text" class="field-input"
-          ><button class="btn btn-text js-btn-edit">Edit</button><button class="btn btn-icon js-btn-delete"><img src="./remove.svg" class="btn-image" alt=""></button>
-        </li>
-        <li class="list-item field open-for-edit">
-          <input type="checkbox" class="field-checkbox"><label class="field-label">Go Shopping</label
-            ><input type="text" class="field-input" value="Go Shopping"><button class="btn btn-text js-btn-edit">Save</button
+      </section>
+      <section>
+        <h3 class="title">Todo</h3>
+        <ul id="incomplete-tasks" class="list">
+          <li class="list-item field">
+            <input type="checkbox" class="field-checkbox"><label class="field-label">Pay Bills</label
+            ><input type="text" class="field-input"><button class="btn btn-text js-btn-edit">Edit</button
             ><button class="btn btn-icon js-btn-delete"><img src="./remove.svg" class="btn-image" alt=""></button>
-        </li>
-      </ul>
-      <h3 class="title">Completed</h3>
-      <ul id="completed-tasks" class="list">
-        <li class="list-item field"><input type="checkbox" class="field-checkbox" checked>
-          <label class="field-label">See the Doctor</label><input type="text" class="field-input"
-          ><button class="btn btn-text js-btn-edit">Edit</button><button class="btn btn-icon js-btn-delete"><img src="./remove.svg" class="btn-image" alt=""></button>
-        </li>
-      </ul>
-    </div>
+          </li>
+          <li class="list-item field open-for-edit">
+            <input type="checkbox" class="field-checkbox"><label class="field-label">Go Shopping</label
+              ><input type="text" class="field-input" value="Go Shopping"><button class="btn btn-text js-btn-edit">Save</button
+              ><button class="btn btn-icon js-btn-delete"><img src="./remove.svg" class="btn-image" alt=""></button>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="title">Completed</h3>
+        <ul id="completed-tasks" class="list">
+          <li class="list-item field"><input type="checkbox" class="field-checkbox" checked>
+            <label class="field-label">See the Doctor</label><input type="text" class="field-input"
+            ><button class="btn btn-text js-btn-edit">Edit</button><button class="btn btn-icon js-btn-delete"
+            ><img src="./remove.svg" class="btn-image" alt=""></button>
+          </li>
+        </ul>
+      </section>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
