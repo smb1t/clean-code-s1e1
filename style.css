@@ -5,24 +5,24 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.header img {
   width: 100%;
 }
 
-.aaa .more-inf {
+.header-link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .aaa { 
+  .header { 
     text-align: center;
   }
   
@@ -34,13 +34,14 @@ body {
   margin: 0 auto 0;
 }
 
-.task {
+.field-label,
+.field-input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.field-group {
+.field {
   display: flex;
 }
 
@@ -141,13 +142,13 @@ li > input[type="text"] {
   width: 226px;
 }
 
-button.delete img {
+button.btn-icon img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+button.btn-icon img:hover {
   transform: rotateZ(0);
 }
 
@@ -162,11 +163,11 @@ ul li input[type="text"] {
   display: none;
 }
 
-ul li.edit-mode input[type="text"] {
+ul li.open-for-edit input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.edit-mode label {
+ul li.open-for-edit label {
   display: none;
 }

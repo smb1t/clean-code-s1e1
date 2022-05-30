@@ -6,34 +6,34 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body>
-    <div class="aaa">
-      <img src="./eisenhower-matrix.jpg" alt="">
-      <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    <div class="header">
+      <img src="./eisenhower-matrix.jpg"  class="header-image" alt="">
+      <a class="header-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div>
     <div class="main-section">
       <p>
-        <label for="new-task">Add Item</label>
-        <div class="field-group">
-          <input id="new-task" class="task" type="text"><button>Add</button>
+        <label for="new-task" class="title">Add Item</label>
+        <div class="field">
+          <input id="new-task" class="field-input" type="text"><button id="add-btn" class="btn btn-text">Add</button>
         </div>
       </p>
-      <h3>Todo</h3>
-      <ul id="incomplete-tasks">
-        <li>
-          <input type="checkbox"><label class="task">Pay Bills</label><input type="text" class="task"
-          ><button class="edit">Edit</button><button class="delete"><img src="./remove.svg" alt=""></button>
+      <h3 class="title">Todo</h3>
+      <ul id="incomplete-tasks" class="list">
+        <li class="list-item field">
+          <input type="checkbox" class="field-checkbox"><label class="field-label">Pay Bills</label><input type="text" class="field-input"
+          ><button class="btn btn-text js-btn-edit">Edit</button><button class="btn btn-icon js-btn-delete"><img src="./remove.svg" class="btn-image" alt=""></button>
         </li>
-        <li class="edit-mode">
-          <input type="checkbox"><label class="task">Go Shopping</label
-            ><input type="text" value="Go Shopping" class="task"><button class="edit">Save</button
-            ><button class="delete"><img src="./remove.svg" alt=""></button>
+        <li class="list-item field open-for-edit">
+          <input type="checkbox" class="field-checkbox"><label class="field-label">Go Shopping</label
+            ><input type="text" class="field-input" value="Go Shopping"><button class="btn btn-text js-btn-edit">Save</button
+            ><button class="btn btn-icon js-btn-delete"><img src="./remove.svg" class="btn-image" alt=""></button>
         </li>
       </ul>
-      <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li><input type="checkbox" checked>
-          <label class="task">See the Doctor</label><input type="text" class="task"
-          ><button class="edit">Edit</button><button class="delete"><img src="./remove.svg" alt=""></button>
+      <h3 class="title">Completed</h3>
+      <ul id="completed-tasks" class="list">
+        <li class="list-item field"><input type="checkbox" class="field-checkbox" checked>
+          <label class="field-label">See the Doctor</label><input type="text" class="field-input"
+          ><button class="btn btn-text js-btn-edit">Edit</button><button class="btn btn-icon js-btn-delete"><img src="./remove.svg" class="btn-image" alt=""></button>
         </li>
       </ul>
     </div>
